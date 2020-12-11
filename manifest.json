@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "author": "Beckett Randlett",
+  "name": "Castle Learning Answers / Castle Learning+",
+  "version": "2.0",
+  "description": "Castle Learning+ allows you to easily and quickly search for the answers to nearly any question on Castle Learning.",
+  "icons": {
+    "16": "16.png",
+    "48": "48.png",
+    "128": "128.png"
+  },
+  "permissions": [
+    "*://*.castlelearning.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.castlelearning.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
